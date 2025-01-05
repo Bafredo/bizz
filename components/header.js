@@ -23,12 +23,16 @@ export function createNavbar() {
     navbar.style.display = "flex";
     navbar.style.alignItems = "center";
     navbar.style.justifyContent = "space-between";
-    navbar.style.padding = "10px 20px";
+    navbar.style.padding = "20px 25px";
     navbar.style.backgroundColor = "#f8f9fa";
     navbar.style.boxShadow = "0px 2px 5px rgba(0, 0, 0, 0.1)";
     navbar.style.width = "98%";
     navbar.style.boxSizing = "border-box"; 
     navbar.style.margin = "1%"
+    navbar.style.position = "fixed"
+    navbar.style.borderRadius = "25px"
+    navbar.style.backgroundColor = "rgba(0, 0, 0, 0.5)"
+    navbar.style.color = "greywhite"
 
     navbar.appendChild(logo);
     navbar.appendChild(navItems);
