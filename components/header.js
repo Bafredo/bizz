@@ -1,3 +1,4 @@
+
 export function createNavbar() {
     const logo = document.createElement("div");
     logo.textContent = "Wundershop";
@@ -14,7 +15,15 @@ export function createNavbar() {
     `;
 
     const navOptions = document.createElement("div");
-    navOptions.textContent = "Login | Cart";
+    const cartIcon = document.createElement('img')
+    cartIcon.src = "./../assets/cart.svg"
+    const profileIcon = document.createElement('img')
+    profileIcon.src = "./../assets/profile.svg"
+    profileIcon.style.marginLeft = "10px"
+    profileIcon.style.scale = "1.5"
+    cartIcon.style.scale = "1.4"
+    navOptions.appendChild(cartIcon)
+    navOptions.appendChild(profileIcon)
     navOptions.style.marginLeft = "auto";
     navOptions.style.cursor = "pointer";
 
@@ -32,7 +41,7 @@ export function createNavbar() {
     navbar.style.position = "fixed"
     navbar.style.borderRadius = "25px"
     navbar.style.backgroundColor = "rgba(0, 0, 0, 0.5)"
-    navbar.style.color = "greywhite"
+    navbar.style.color = "white"
 
     navbar.appendChild(logo);
     navbar.appendChild(navItems);
