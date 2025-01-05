@@ -26,8 +26,9 @@ export function createNavbar() {
     navbar.style.padding = "10px 20px";
     navbar.style.backgroundColor = "#f8f9fa";
     navbar.style.boxShadow = "0px 2px 5px rgba(0, 0, 0, 0.1)";
-    navbar.style.width = "100%";
+    navbar.style.width = "98%";
     navbar.style.boxSizing = "border-box"; 
+    navbar.style.margin = "1%"
 
     navbar.appendChild(logo);
     navbar.appendChild(navItems);
