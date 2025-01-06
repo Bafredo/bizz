@@ -4,6 +4,7 @@ export function createNavbar() {
     logo.textContent = "Wundershop";
     logo.style.fontWeight = "bold";
     logo.style.marginRight = "auto";
+    logo.style.fontSize = "24px"
 
     const navItems = document.createElement("div");
     navItems.innerHTML = `
