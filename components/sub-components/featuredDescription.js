@@ -1,7 +1,9 @@
 export function createFeaturedDesc(){
     const featuredDescription = document.createElement('div')
     featuredDescription.style.width = "fit-content"
-    featuredDescription.style.transform = "translate(9%,-145%)"
+    featuredDescription.style.position = "absolute"
+    featuredDescription.style.left = "7vw"
+    featuredDescription.style.top = "45vh"
     featuredDescription.style.display = "flex"
     featuredDescription.style.alignItems = "center"
 
@@ -15,12 +17,12 @@ export function createFeaturedDesc(){
     featBuy.style.backgroundColor = "rgba(0,0,0,0.1)"
     featBuy.style.color = "white"
     featBuy.style.fontSize = "22px"
-    featBuy.style.borderRadius  = "10px"
+    featBuy.style.borderRadius  = "20px"
 
     const featPrice = document.createElement('p')
     featPrice.textContent = "KES 54,000"
     featPrice.style.margin = "7px"
-    featPrice.style.color = "white"
+    featPrice.style.color = "black"
     featPrice.style.fontSize = "26px"
     featPrice.style.fontWeight = "bold"
 
