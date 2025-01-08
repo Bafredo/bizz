@@ -7,6 +7,7 @@ export function createNavbar() {
     logo.style.fontSize = "24px"
 
     const navItems = document.createElement("div");
+    navItems.id = "navItems"
     navItems.innerHTML = `
         <ul style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
             <li style="cursor: pointer;">Phones</li>
